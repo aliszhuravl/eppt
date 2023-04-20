@@ -1,0 +1,66 @@
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  background: #0066AE;
+  border-radius: 40px;
+  border: 1px solid #0066AE;
+  color: #FFFFFF;
+  font-size: 16px;
+  height: 42px;
+  padding: 0 24px;
+  font-family: $font-family;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;  
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: darken($color-blue, 5%);
+    background-color: darken($color-blue, 5%);
+  }
+  
+  &:active {
+    background-color: darken($color-blue, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_transparent {
+  background-color: #fff;
+  color: $color-blue;
+    &:hover {
+      background: #0066AE;
+      color: #fff;
+    }
+}
+
+.btn_inactive {
+  opacity: 0.5;
+}

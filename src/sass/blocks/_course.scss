@@ -1,0 +1,196 @@
+//Стили страницы курса
+
+.course_title {
+  margin-bottom: 32px;
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+.course_timer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 102, 174, 0.13);
+  margin-bottom: 20px;
+    &-available {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &-timer {
+      display: flex;
+      align-items: center;
+        img {
+          display: block;
+          margin-right: 6px;
+          height: 24px;
+          width: 24px;
+        }
+        span {
+          font-size: 24px;
+          line-height: 26px;
+          color: $color-blue;
+          font-family: $font-family_medium;
+        }
+    }
+}
+
+.course_info {
+  &-desc {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(41, 41, 41, 0.7);
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+  &-btns {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 102, 174, 0.13);
+    margin-bottom: 40px;
+      a {
+        text-decoration: none;
+          span {
+            margin-right: 8px;
+            font-size: 18px;
+            line-height: 26px;
+          }
+          img {
+            width: 10px;
+            height: 10px;
+          }
+      }
+    &-box {
+      display: flex;
+      align-items: flex-end;
+        a:first-child {
+          margin-right: 20px;
+        }
+    }
+  }
+}
+
+.course_btns {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+    a:last-child {
+      margin-left: 20px;
+    }
+}
+
+.course_materials {
+  &-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+      h3 {
+        margin-bottom: 0;
+      }
+  }
+  &-items {
+    width: 100%;
+      &_item {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 102, 174, 0.8);
+        border-radius: 40px;
+        padding: 32px;
+        margin-bottom: 32px;
+          &__title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+              p {
+                font-size: 20px;
+                line-height: 25px;
+                color: $color-blue;
+                font-family: $font-family_medium;
+              }
+          }
+          &__desc {
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(41, 41, 41, 0.7);
+            max-width: 80%;
+            margin-bottom: 20px;
+          }
+          &__btns {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+              .links {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: -webkit-fill-available;
+                .btn {
+                  &:last-child {
+                    margin-left: 20px;
+                  }
+                }
+              }
+          }
+      }
+  }
+}
+
+.item_completed {
+  border: 1px solid rgba(0, 102, 174, 0.3);
+}
+
+.blue_text {
+  color: $color-blue;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.status {
+  border: 1px solid rgba(0, 102, 174, 0.13);
+  border-radius: 20px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #0066AE;
+  padding: 0 20px;
+}
+
+.completed {
+  background: rgba(0, 102, 174, 0.13);
+  border: none;
+}
+
+.red {
+  color: $color-red;
+  font-size: 18px;
+  width: -webkit-fill-available;
+}
+
+.course-short {
+  .course_info-btns {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.arrow_links_box {
+  display: flex;
+  a:first-child {
+    margin-right: 20px;
+  }
+}

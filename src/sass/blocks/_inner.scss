@@ -1,0 +1,204 @@
+//inner pages with sidebar
+
+.item_sidebar {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+    .sidebar {
+      width: 25%;
+    }
+    &__content {
+      background-color: #fff;
+      border-radius: 40px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 4px 4px 4px rgba(0, 102, 174, 0.13);
+        h1 {
+          font-size: 36px;
+          line-height: 40px;
+          font-family: $font-family_medium;
+          color: $color-black;
+        }
+        &_container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          &_left {
+            width: 45%;
+            margin-right: 32px;
+            .profile_box {
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              background: #FFFFFF;
+              border: 1px solid rgba(0, 102, 174, 0.13);
+              border-radius: 40px;
+              margin-bottom: 20px;
+                img {
+                  display: block;
+                  margin-bottom: 16px;
+                }
+                p {
+                  font-size: 18px;
+                  line-height: 26px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  color: $color-black;
+                  font-family: $font-family_medium;
+                  margin-bottom: 4px;
+                }
+                a {
+                  font-size: 18px;
+                  line-height: 26px;
+                }
+            }
+            .info_box {
+              width: 100%;
+                .info_box__title {
+                  font-size: 20px;
+                  line-height: 26px;
+                  font-family: $font-family_medium;
+                  margin-bottom: 12px;
+                  color: $color-black;
+                }
+                p {
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: rgba(41, 41, 41, 0.7);
+                }
+            }
+          }
+          &_right {
+            width: 55%;
+          }
+        }
+    }
+}
+
+.course_box {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 102, 174, 0.13);
+  border-radius: 40px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 24px;
+        .timer {
+          font-size: 18px;
+          line-height: 18px;
+          text-align: center;
+
+          color: rgba(41, 41, 41, 0.7);
+        }
+        img {
+          margin-bottom: 16px;
+          border-radius: 50%;
+          width: 106px;
+          height: 106px;
+          object-fit: cover;
+        }
+    }
+    &_right {
+      .course_name {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+      }
+      .timer {
+        color: rgba(41, 41, 41, 0.7);
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 16px;
+      }
+      .progress {
+        &__item {
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          p:first-child {
+            font-size: 16px;
+            line-height: 18px;
+            color: rgba(41, 41, 41, 0.8);
+            margin-bottom: 2px;
+            letter-spacing: -0.15px;
+          }
+          p:last-child {
+            font-size: 13px;
+            line-height: 18px;
+            color: rgba(41, 41, 41, 0.5);
+          }
+        }
+      }
+    }
+}
+
+// sidebar styles
+
+.sidebar {
+  margin-top: 20px;
+  margin-right: 32px;
+  &_item {
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+      a {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: $font-family_medium;
+      }
+  }
+  .item-courses {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+        li {
+          margin-bottom: 16px;
+          width: 100%;
+          max-width: 180px;
+          a {
+            width: 180px;
+            text-transform: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+          }
+          .active_course {
+            color: $color-blue;
+            text-decoration: underline;
+          }
+        }
+    }
+  }
+  .active {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px rgba(0, 102, 174, 0.13);
+  }
+}
+
+.page-courses {
+  .courses_wrap {
+    flex-wrap: wrap;
+      .course_box {
+        width: calc(50% - 16px);
+        margin-right: 32px;
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+      }
+  }
+}

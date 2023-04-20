@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 13px/1.5 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 48px;
+  color: #292929;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 27px;
+  font-family: $font-family_medium;
+  margin-top: 0;
+  margin-bottom: 16px;
+}

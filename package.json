@@ -1,0 +1,45 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "author": "squalo",
+  "devDependencies": {
+    "4": "^0.0.0",
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-filter": "^7.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-typograf": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "gulp.spritesmith": "^6.13.0",
+    "imagemin-pngquant": "^9.0.2",
+    "path": "^0.12.7",
+    "rimraf": "^4.4.1",
+    "sass": "^1.58.2"
+  },
+  "description": "<h2>HTML/SCSS/JS шаблон для новых репозиториев</h2>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "glob-watcher": "^5.0.5",
+    "resolve-url": "^0.2.1",
+    "source-map-resolve": "^0.6.0",
+    "source-map-url": "^0.4.1",
+    "urix": "^0.1.0"
+  }
+}

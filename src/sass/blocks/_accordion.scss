@@ -1,0 +1,110 @@
+.accordion {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  border-bottom: none;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__item {
+  margin-bottom: 20px;
+  border-bottom: none;
+  border-radius: 40px;
+}
+
+.accordion__btn {
+  border-radius: 40px;
+  box-shadow: 4px 4px 4px rgba(0, 102, 174, 0.13);
+  border-bottom: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px 20px 32px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  transition: all .15s;
+  will-change: background-color;
+  cursor: default;
+
+  &:before { /* vertical element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    will-change: transform, width;
+    transition: all .15s;
+    width: 2px;
+    height: 14px;
+    background-color: $color-blue;
+    z-index: 1;
+  }
+
+  &:after { /* horizontal element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    will-change: transform;
+    transition: all .15s;
+    width: 14px;
+    height: 2px;
+    background-color: $color-blue;
+  }
+}
+
+.accordion__content {
+  opacity: 0;
+}
+
+.accordion__item_open {
+  box-shadow: 4px 4px 4px rgba(0, 102, 174, 0.13);
+
+  & .accordion__btn {
+    background-color: #fff;
+    border-bottom-color: transparent;
+
+    &:before {
+      height: 2px;
+    }
+  }
+
+  & .accordion__content {
+    background:#fff;
+    display: block;
+    opacity: 1;
+  }
+  .accordion__btn {
+    border-radius: 40px 40px 0 0;
+    box-shadow: none;
+  }
+}
+
+.accordion__content {
+  display: none;
+  padding: 10px 20px 20px 32px;
+  background-color: #fff;
+  will-change: height;
+  border-radius:  0 0 40px 40px;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(86, 96, 105, 0.5);
+}
+
+.accordion__text {
+  max-width: 90%;
+  font-weight: normal;
+  font-size: 22px;
+  color: #566069;
+  font-family: $font-family_light;
+}

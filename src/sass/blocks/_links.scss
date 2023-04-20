@@ -1,0 +1,30 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-black;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_blue {
+  color: $color-blue;
+    &:hover {
+      color: $color-black;
+    }
+
+    &:focus,
+    &:active {
+      outline: 0;
+      text-decoration: none;
+    }
+}
