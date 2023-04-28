@@ -22,8 +22,13 @@
                     </div>
                 </div>
                 <div class="header__inner_box_profile">
+                    <div class="hamburger">
+                        <button class="hamburger__item" id="burger">
+                            <span></span>
+                        </button>
+                    </div>
                     <div class="header__inner_box_profile-btns">
-                        <a href="reg.html" class="btn btn_transparent">Регистрация</a>
+                        <a href="register.html" class="btn btn_transparent">Регистрация</a>
                         <a href="enter.html" class="btn">Войти в систему</a>
                     </div>
                 </div>
@@ -34,12 +39,12 @@
                 <div class="subheader_box__mainmenu">
                     <ul class="nav__list">
                         <li class="nav__link"><a href="index.html">Главная</a></li>
-                        <li class="nav__link"><a href="index.html">Курсы</a></li>
+                        <li class="nav__link"><a href="courses_all.html">Курсы</a></li>
                         <li class="nav__link"><a href="index.html">О портале</a></li>
                         <li class="nav__link"><a href="index.html">Инструкции</a></li>
-                        <li class="nav__link"><a href="index.html">Вопрос-ответ</a></li>
-                        <li class="nav__link"><a href="index.html">Техподдержка</a></li>
-                        <li class="nav__link"><a href="index.html">Контакты</a></li>
+                        <li class="nav__link"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="nav__link"><a href="tex.html">Техподдержка</a></li>
+                        <li class="nav__link"><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="subheader_box__search">
@@ -175,9 +180,33 @@
             <div class="footer__inner_info">© 2023 Единый Портал Подготовки к Тестированию</div>
         </div>
     </footer>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <ul class="nav__list_mobile">
+                        <li class="nav__link"><a href="index.html">Главная</a></li>
+                        <li class="nav__link"><a href="courses_all.html">Курсы</a></li>
+                        <li class="nav__link"><a href="#">О портале</a></li>
+                        <li class="nav__link"><a href="#">Инструкции</a></li>
+                        <li class="nav__link"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="nav__link"><a href="tex.html">Техподдержка</a></li>
+                        <li class="nav__link"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <div class="profile_menu">
+                        <a href="register.html" class="btn btn_transparent">Регистрация</a>
+                        <a href="enter.html" class="btn">Войти в систему</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

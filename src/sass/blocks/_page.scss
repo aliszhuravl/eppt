@@ -44,6 +44,8 @@
 
 //inner pages
 
-.page-inner {
-
+.page__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

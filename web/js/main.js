@@ -97,3 +97,127 @@ window.onload = function() {
     var accordion = new Accordion($('.accordion'), false);
 
 })(jQuery);
+$('.dropdown').each(function () {
+
+    // Cache the number of options
+    var $dropdown = $(this),
+        $dropdowns = $('.dropdown').not(this),
+        $dropdownText = $dropdown.find('.dropdown__text'),
+        $dropdownList = $dropdown.find('.dropdown__list'),
+        $dropdownListItems = $dropdown.find('.dropdown__item');
+
+    // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+    $dropdown.on('click', function(e) {
+        e.stopPropagation();
+        $dropdowns.removeClass('dropdown_opened');
+        $dropdowns.find('.dropdown__list').slideUp(250);
+
+        if ($dropdown.hasClass('dropdown_opened')) {
+            $dropdown.removeClass('dropdown_opened');
+            $dropdown.find('.dropdown__list').slideUp(250);
+        } else {
+            $dropdown.addClass('dropdown_opened');
+            $dropdown.find('.dropdown__list').slideDown(250);
+        }
+    });
+
+    // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+    // Updates the select element to have the value of the equivalent option
+    $dropdownListItems.click(function(e) {
+        e.stopPropagation();
+        $dropdownText.text($(this).text());
+        $dropdown.removeClass('dropdown_opened');
+        $dropdownList.slideUp(150);
+
+    });
+
+    // Hides the unordered list when clicking outside of it
+    $(document.body).click( function() {
+        $dropdown.removeClass('dropdown_opened');
+        $dropdownList.slideUp(150);
+    });
+});
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+
+// Fires whenever a player has finished loading
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+// Fires when the player's state changes.
+function onPlayerStateChange(event) {
+    // Go to the next video after the current one is finished playing
+    if (event.data === 0) {
+        $.fancybox.next();
+    }
+}
+
+
+// The API will call this function when the page has finished downloading the JavaScript for the player API
+function onYouTubePlayerAPIReady() {
+
+    // Initialise the fancyBox after the DOM is loaded
+    $(document).ready(function() {
+        $(".fancybox-video")
+            .attr('rel', 'gallery')
+            .fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+                nextEffect  : 'none',
+                prevEffect  : 'none',
+                padding     : 0,
+                margin      : 50,
+                beforeShow  : function() {
+                    // Find the iframe ID
+                    var id = $.fancybox.inner.find('iframe').attr('id');
+
+                    // Create video player object and add event listeners
+                    var player = new YT.Player(id, {
+                        events: {
+                            'onReady': onPlayerReady,
+                            'onStateChange': onPlayerStateChange
+                        }
+                    });
+                }
+            });
+    });
+
+}
+$(document).ready(function() {
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 80) {
+            $(".panel").addClass('panel_open')
+        }
+        if (120 > scrolled) {
+            $(".panel").removeClass('panel_open')
+        }
+    }
+});
+(function($) {
+    var hamburger = $('.hamburger');
+    var body = $('body');
+
+    function hamburgerOpen() {
+        hamburger.addClass('hamburger_active');
+        $('body').addClass('stopped');
+        $('.menu_opener').addClass('menu-mobile_opened');
+    }
+
+    function hamburgerClose() {
+        hamburger.removeClass('hamburger_active');
+        $('body').removeClass('stopped');
+        $('.menu_opener').removeClass('menu-mobile_opened');
+    }
+
+    hamburger.on('click', function () {
+        if ( $(this).hasClass('hamburger_active') ) {
+            hamburgerClose()
+        } else {
+            hamburgerOpen();
+        }
+    });
+})(jQuery);

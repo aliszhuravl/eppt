@@ -1,0 +1,352 @@
+.test_content {
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 102, 174, 0.13);
+      .course_timer {
+        border-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        padding-bottom: 0;
+          &-available {
+            margin-bottom: 12px;
+          }
+      }
+  }
+  &__progress {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 102, 174, 0.13);
+      p {
+        font-size: 20px;
+        line-height: 25px;
+        font-family: $font-family_medium;
+        color: $color-blue;
+      }
+  }
+  &__question {
+    display: block;
+      &_title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+          .q_num {
+            font-size: 20px;
+            line-height: 25px;
+            color: $color-blue;
+          }
+          .info {
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(0, 102, 174, 0.7);
+            display: flex;
+            align-items: center;
+              img {
+                display: block;
+                margin-right: 4px;
+              }
+          }
+      }
+      &_body {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        font-family:  $font-family_medium;
+      }
+      &_variants {
+        width: 100%;
+          &__item {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid rgba(0, 102, 174, 0.13);
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 16px;
+              p {
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-gray;
+              }
+              &:hover {
+                transition: all 0.2s;
+                border: 1px solid rgba(0, 102, 174, 0.33);
+              }
+          }
+          .chosen {
+            border: 1px solid rgba(0, 102, 174, 1);
+              p {
+                color: $color-blue;
+              }
+          }
+          .right_answer {
+            border-color: $color-green;
+              p {
+                color: $color-green;
+              }
+          }
+          .wrong_answer {
+            border-color: $color-red;
+            p {
+              color: $color-red;
+            }
+          }
+      }
+      &_submit {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+          p {
+            max-width: 70%;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(41, 41, 41, 0.7);
+          }
+          .btn {
+            min-width: 150px;
+          }
+      }
+    .answer_check {
+      flex-direction: column;
+      .law {
+        font-family: $font-family_medium;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-black;
+        display: block;
+        margin-bottom: 12px;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 80%;
+      }
+      .btn {
+        width: auto;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+
+// стили для демо-теста (отдельные)
+
+.demo-test {
+  .course_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+      h1 {
+        font-size: 24px;
+        line-height: 26px;
+        color: #566069;
+        margin-bottom: 0;
+      }
+      .link_blue {
+        font-size: 18px;
+        line-height: 26px;
+        color: #258DDC;
+      }
+  }
+  .test_content__info {
+    display: flex;
+    border-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left {
+      width: 80%;
+      p {
+        font-size: 20px;
+        line-height: 25px;
+        font-family: $font-family_medium;
+        color: #566069;
+      }
+      &_questions {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        overflow-x: scroll;
+        max-width: 90%;
+        min-height: 45px;
+          .quest_icon {
+            background: #FFFFFF;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            font-family: $font-family;
+            padding: 6px 12px;
+            color: #0066AE;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+              &:hover {
+                background-color: #258DDC;
+                box-shadow: none;
+                color: #fff;
+                transition: all 0.2s;
+              }
+          }
+          .active {
+            background-color: #258DDC;
+            box-shadow: none;
+            color: #fff;
+          }
+          .no_answer {
+            background: #FFD6D6;
+            color: #C52116;
+            box-shadow: none;
+          }
+          .disabled {
+            background: #EAECEF;
+            box-shadow: none;
+            color: rgba(86, 96, 105, 0.5);
+          }
+      }
+    }
+    .right {
+      .timer {
+        border: 1px solid rgba(0, 102, 174, 0.38);
+        padding: 16px 12px;
+          p {
+            font-size: 16px;
+            line-height: 20px;
+              &:first-child {
+                margin-bottom: 4px;
+              }
+              &:last-child {
+                color: #258DDC;
+              }
+          }
+      }
+    }
+  }
+  .test_content__question {
+    &_body {
+      display: flex;
+      align-items: flex-end;
+      .num {
+        display: block;
+        margin-right: 20px;
+        padding-left: 12px;
+        font-size: 60px;
+        line-height: 60px;
+        font-family: $font-family;
+        color: #258DDC;
+      }
+    }
+  }
+  .test_content__question_variants__item {
+    background: #F4F7FC;
+    border-radius: 3px;
+    border-color: transparent;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+      .check {
+        margin-right: 12px;
+        background: #FFFFFF;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+  }
+  .chosen {
+    p {
+      color: $color-gray;
+    }
+    .check {
+      border: 2px solid #258DDC;
+      background-image: url('../img/check.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .test_content__question_submit {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+    border-top: 1px solid rgba(86, 96, 105, 0.35);
+    margin-top: 32px;
+    .btn {
+      background: #258DDC;
+      border-radius: 3px;
+      transition: all 0.2s;
+      border-color: #258DDC;
+      margin-right: 20px;
+        &:hover {
+          background-color: #00b0e9;
+          border-color: #00b0e9;
+          transition: all 0.2s;
+        }
+    }
+  }
+  .repeat {
+    align-items: center;
+  }
+  .red {
+    color: #C52116 !important;
+    text-align: center;
+  }
+
+  .orange {
+    color: #FD992B;
+    display: flex;
+    align-items: center;
+      img {
+        display: block;
+        margin-right: 4px;
+        height: 14px;
+        width: auto;
+      }
+  }
+
+  .final_container {
+    margin-bottom: 20px;
+    p {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .link_blue {
+      color: #258DDC;
+    }
+  }
+
+  .final_message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+      p {
+        max-width: 50%;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+      }
+      img {
+        margin-bottom: 12px;
+      }
+  }
+}
+
+.all-final {
+  a {
+    margin-top: 20px;
+  }
+}

@@ -24,3 +24,25 @@
         }
     }
 }
+
+.nav__list_mobile {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  .nav__link {
+    padding: 0;
+    margin-bottom: 16px;
+      a {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+  }
+}
+
+.profile_menu {
+  padding: 0 20px;
+  margin-bottom: 20px;
+    a {
+      margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Сформировать заявление</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+
+            <section class="page__item transparent_item">
+                <div class="page__item__inner page__form">
+                    <div class="form_body">
+                        <div class="bc">Главная / Заявление</div>
+                        <div class="form_body__header">
+                            <h1>Заявление</h1>
+                            <p>Об аттестации в области промышленной безопасности, по вопросам безопасности гидротехнических сооружений, безопасности в сфере электроэнергетики</p>
+                        </div>
+                        <div class="form">
+                            <h3>Данные работника</h3>
+                            <div class="item">
+                                <p>Выбрать территориальное отделение</p>
+                                <div class="dropdown">
+                                    <div class="dropdown__text">Выберите</div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">Отделение полиции</li>
+                                        <li class="dropdown__item">Отделение психиатрии</li>
+                                        <li class="dropdown__item">Отделение по борьбе с террористами</li>
+                                        <li class="dropdown__item">Отделение по борьбе с наркоманами</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_box">
+                                <div class="item">
+                                    <p>Фамилия</p>
+                                    <input type="text" placeholder="Фамилия" class="form__item">
+                                </div>
+                                <div class="item">
+                                    <p>Имя</p>
+                                    <input type="text" placeholder="Имя" class="form__item">
+                                </div>
+                                <div class="item">
+                                    <p>Отчество (при наличии)</p>
+                                    <input type="text" placeholder="Отчество" class="form__item">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>Дата рождения</p>
+                                <input type="date" placeholder="" class="form__item date">
+                            </div>
+                            <div class="item">
+                                <p>Данные документа, удостоверяющего личность (серия, номер, кем выдан, дата выдачи)</p>
+                                <input type="text" placeholder="Данные документа" class="form__item">
+                            </div>
+                            <div class="item">
+                                <p>Занимаемая должность</p>
+                                <input type="text" placeholder="Занимаемая должность" class="form__item">
+                            </div>
+
+                            <h3>Данные организации</h3>
+
+                            <div class="item">
+                                <p>ИНН организации</p>
+                                <p>Заполните ИНН, и остальные данные организации заполнятся автоматически</p>
+                                <input type="text" placeholder="ИНН организации" class="form__item">
+                            </div>
+                            <div class="item_box">
+                                <div class="item">
+                                    <p>Название организации</p>
+                                    <input type="text" class="form__item">
+                                </div>
+                                <div class="item">
+                                    <p>Адрес организации</p>
+                                    <input type="text" class="form__item">
+                                </div>
+                            </div>
+                            <div class="item_box all-in-one">
+                                <p>Телефон, факс, электронная почта организации (при наличии)</p>
+                                <div class="all-in-one_box">
+                                    <div class="item">
+                                        <input type="text" class="form__item">
+                                    </div>
+                                    <div class="item">
+                                        <input type="text" class="form__item">
+                                    </div>
+                                    <div class="item">
+                                        <input type="text" class="form__item">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Данные аттестации</h3>
+
+                            <div class="item">
+                                <p>Причина аттестации (первичная, периодическая, внеочередная)</p>
+                                <div class="dropdown">
+                                    <div class="dropdown__text">Выберите</div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">Отделение полиции</li>
+                                        <li class="dropdown__item">Отделение психиатрии</li>
+                                        <li class="dropdown__item">Отделение по борьбе с террористами</li>
+                                        <li class="dropdown__item">Отделение по борьбе с наркоманами</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <p>Категория работника</p>
+                                <div class="dropdown">
+                                    <div class="dropdown__text">Выберите</div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">Отделение полиции</li>
+                                        <li class="dropdown__item">Отделение психиатрии</li>
+                                        <li class="dropdown__item">Отделение по борьбе с террористами</li>
+                                        <li class="dropdown__item">Отделение по борьбе с наркоманами</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3>Области аттестации</h3>
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">А1</span>Общие требования промышленной безопасности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                            <p>Общие требования промышленной безопасности</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б1</span>Требования промышленной безопасности в химической, нефтехимической и нефтегазоперерабатывающей промышленности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.1 Эксплуатация химически опасных производственных объектов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.2 Эксплуатация опасных производственных объектов нефтегазоперерабатывающих
+                                                    и нефтехимических производств</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.3 Эксплуатация опасных производственных объектов сжиженного природного газа</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.4 Эксплуатация хлорных объектов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.5 Эксплуатация производств минеральных удобрений</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.6 Эксплуатация аммиачных холодильных установок</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.7 Эксплуатация опасных производственных объектов складов нефти и нефтепродуктов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.8 Проектирование химически опасных производственных объектов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.9 Строительство, реконструкция, техническое перевооружение, капитальный ремонт, консервация и ликвидация химически опасных производственных объектов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.10 Проектирование, строительство, реконструкция, техническое перевооружение, капитальный ремонт, консервация и ликвидация опасных производственных объектов нефтегазоперерабатывающих и нефтехимических производств</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.11 Безопасное ведение газоопасных, огневых и ремонтных работ</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.12 Эксплуатация компрессорных установок
+                                                    с поршневыми компрессорами, работающими на взрывоопасных и вредных газах</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.13 Эксплуатация стационарных компрессорных установок, воздухопроводов и газопроводов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.14 Производство водорода методом электролиза воды</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.15 Эксплуатация опасных производственных объектов, на которых осуществляются технологические процессы нитрования</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.16 Эксплуатация объектов маслоэкстракционных производств и производств гидрогенизации жиров</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.17 Производство и потребление продуктов разделения воздуха</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б1.18 Эксплуатация опасных производственных объектов производства шин, резинотехнических и латексных изделий</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б2</span>Требования промышленной безопасности в нефтяной и газовой промышленности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.1 Эксплуатация объектов нефтяной и газовой промышленности</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.2 Ремонт нефтяных и газовых скважин</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.3 Проектирование объектов нефтегазодобычи</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.4 Бурение нефтяных и газовых скважин</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.5 Нефтепромысловые трубопроводы для транспорта нефти и газа</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.6 Разведка и разработка морских месторождений углеводородного сырья</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.7 Магистральные нефтепроводы и нефтепродуктопроводы</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.8 Магистральные газопроводы</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.9 Магистральные трубопроводы для транспортировки жидкого аммиака</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б2.10 Подземные хранилища газа</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б3</span>Требования промышленной безопасности в металлургической промышленности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.1 Литейное производство черных и цветных металлов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.2 Медно-никелевое производство</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.3 Коксохимическое производство</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.4 Производство первичного алюминия</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.5 Производство редких, благородных и других цветных металлов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.6 Доменное и сталеплавильное производство</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.7 Производство ферросплавов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.8 Производство с полным металлургическим циклом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.9 Проектирование, строительство, реконструкция, капитальный ремонт объектов металлургической промышленности</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б3.10 Энергетические службы металлургических предприятий</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б4</span>Требования промышленной безопасности в горной промышленности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б4.1 Обогащение полезных ископаемых</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б4.2 Строительство, реконструкция, капитальный ремонт подземных сооружений</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б4.3 Разработка месторождений полезных ископаемых открытым способом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б4.4 Разработка месторождений полезных ископаемых подземным способом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б4.5 Проектирование опасных производственных объектов горной промышленности</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б5</span>Требования промышленной безопасности в угольной промышленности</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б5.1 Разработка угольных месторождений открытым способом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б5.2 Обогащение и брикетирование углей (сланцев)</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б5.3 Разработка угольных месторождений подземным способом</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б6</span>Требования по маркшейдерскому обеспечению безопасного ведения горных работ</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б6.1 Маркшейдерское обеспечение безопасного ведения горных работ при осуществлении работ, связанных с пользованием недрами и их проектированием</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б6.2 Маркшейдерское обеспечение безопасного ведения горных работ при осуществлении пользования недрами в целях, не связанных с добычей полезных ископаемых,
+                                                    а также строительства и эксплуатации гидротехнических сооружений</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б6.3 Маркшейдерское обеспечение безопасного ведения горных работ при осуществлении разработки месторождений полезных ископаемых подземным способом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б6.4 Маркшейдерское обеспечение безопасного ведения горных работ при осуществлении разработки месторождений полезных ископаемых открытым способом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б6.5 Маркшейдерское обеспечение безопасного ведения горных работ при осуществлении разработки месторождений углеводородного сырья и гидроминеральных ресурсов</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б7</span>Требования промышленной безопасности на объектах газораспределения и газопотребления</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б7.1 Эксплуатация сетей газораспределения и газопотребления</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б7.2 Эксплуатация объектов, использующих сжиженные углеводородные газы</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б7.3 Проектирование, строительство, реконструкция, техническое перевооружение и капитальный ремонт сетей газораспределения и газопотребления</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б7.4 Эксплуатация автогазозаправочных станций газомоторного топлива</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б8</span>Требования промышленной безопасности к оборудованию, работающему под давлением</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.1 Эксплуатация опасных производственных объектов, на которых используются котлы (паровые, водогрейные, электрические,
+                                                    а также с органическими и неорганическими теплоносителями)</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.2 Эксплуатация опасных производственных объектов, на которых используются трубопроводы пара и горячей воды</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.3 Эксплуатация опасных производственных объектов, на которых используются сосуды, работающие под избыточным давлением</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.4 Эксплуатация опасных производственных объектов, на которых используются медицинские и водолазные барокамеры</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.5 Наполнение, техническое освидетельствование и ремонт баллонов для хранения и транспортирования сжатых, сжиженных и растворенных под давлением газов, применяемых на опасных производственных объектах</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б8.6 Проектирование, строительство, реконструкция, капитальный ремонт
+                                                    и техническое перевооружение опасных производственных объектов, изготовление, монтаж (демонтаж), наладка, обслуживание и ремонт (реконструкция) оборудования, работающего под избыточным давлением, применяемого на опасных производственных объектах</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б9</span>Требования промышленной безопасности к подъемным сооружениям</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.1 Эксплуатация и капитальный ремонт опасных производственных объектов,
+                                                    на которых используются эскалаторы
+                                                    в метрополитенах, эксплуатация (в том числе обслуживание и ремонт) эскалаторов
+                                                    в метрополитенах</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.2 Проектирование, строительство, реконструкция, техническое перевооружение, консервация и ликвидация опасных производственных объектов,
+                                                    на которых используются эскалаторы
+                                                    в метрополитенах, а также изготовление, монтаж и наладка эскалаторов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.3 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и перемещения грузов</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.4 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и транспортировки людей</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.5 Проектирование, строительство, реконструкция, техническое перевооружение, капитальный ремонт, консервация, ликвидация опасных производственных объектов, на которых используются подъемные сооружения</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.6 Монтаж, наладка, обслуживание, ремонт, реконструкция или модернизация подъемных сооружений, применяемых
+                                                    на опасных производственных объектах</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.7 Эксплуатация и капитальный ремонт опасных производственных объектов,
+                                                    на которых используются пассажирские канатные дороги и (или) фуникулеры, эксплуатация (в том числе обслуживание
+                                                    и ремонт) пассажирских канатных дорог
+                                                    и (или) фуникулеров</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.8 Проектирование, строительство, реконструкция, техническое перевооружение, консервация и ликвидация опасных производственных объектов,
+                                                    на которых используются пассажирские канатные дороги и (или) фуникулеры,
+                                                    а также изготовление, монтаж и наладка пассажирских канатных дорог и (или) фуникулеров</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.9 Эксплуатация и капитальный ремонт опасных производственных объектов,
+                                                    на которых используются грузовые подвесные канатные дороги, эксплуатация
+                                                    (в том числе обслуживание и ремонт) грузовых подвесных канатных дорог</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б9.10 Проектирование, строительство, реконструкция, техническое перевооружение, консервация и ликвидация опасных производственных объектов,
+                                                    на которых используются грузовые подвесные канатные дороги, а также изготовление, монтаж и наладка грузовых подвесных канатных дорог</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б10</span>Требования промышленной безопасности при транспортировании опасных веществ</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б10.1 Транспортирование опасных веществ железнодорожным транспортом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б10.2 Транспортирование опасных веществ автомобильным транспортом</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б11</span>Требования промышленной безопасности на объектах хранения и переработки растительного сырья</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б11.1 Строительство, эксплуатация, реконструкция, капитальный ремонт, техническое перевооружение, консервация
+                                                    и ликвидация объектов хранения
+                                                    и переработки растительного сырья</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б11.2 Разработка проектной, конструкторской
+                                                    и иной документации для опасных объектов хранения и переработки растительного сырья</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б11.3 Изготовление, монтаж, наладка, ремонт, техническое освидетельствование, реконструкция и эксплуатация технических устройств (машин и оборудования), применяемых на объектах хранения
+                                                    и переработки растительного сырья</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Б12</span>Требования промышленной безопасности на объектах хранения и переработки растительного сырья</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б12.1 Взрывные работы в подземных выработках и на поверхности рудников (объектах горнорудной и нерудной промышленности), угольных и сланцевых шахт, опасных (не опасных) по газу или пыли,
+                                                    и специальные взрывные работы</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Б12.2 Взрывные работы на открытых горных разработках и специальные взрывные работы</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">В</span>Требования безопасности гидротехнических сооружений</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>В1 Гидротехнические сооружения объектов промышленности</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>В2 Гидротехнические сооружения объектов энергетики</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>В3 Гидротехнические сооружения объектов водохозяйственного комплекса</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>В4 Экспертиза деклараций безопасности гидротехнических сооружений</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Г1</span>Требования к порядку работы в электроустановках потребителей</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г1.1 Эксплуатация электроустановок</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text"><span class="course_ident">Г2</span>Требования к порядку работы в электроустановках потребителей</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г2.1 Эксплуатация тепловых электрических станций</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г2.2 Эксплуатация электрических сетей</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г2.3 Эксплуатация гидроэлектростанций</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г2.4 Эксплуатация объектов возобновляемых
+                                                    источников энергии</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Г2.5 Организация оперативно-диспетчерского управления в электроэнергетике</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="item">
+                                <p>Способ получения:</p>
+                                <div class="dropdown">
+                                    <div class="dropdown__text">Выберите</div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">Отделение полиции</li>
+                                        <li class="dropdown__item">Отделение психиатрии</li>
+                                        <li class="dropdown__item">Отделение по борьбе с террористами</li>
+                                        <li class="dropdown__item">Отделение по борьбе с наркоманами</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3>К заявлению прилагаются следующие документы:</h3>
+                            <div class="doc_form">
+                                <div class="doc_preview">
+                                    <p class="doc_preview__num">1</p>
+                                    <p class="doc_preview__name"><span class="dpn_title">Свидетельство о чем-либо с длинным названием, которое нужно отобразить</span><span class="doc_preview__name_count">5 листов</span></p>
+                                </div>
+                                <div class="doc_preview">
+                                    <p class="doc_preview__num">2</p>
+                                    <p class="doc_preview__name"><span class="dpn_title">Название.pdf</span><span class="doc_preview__name_count">10 листов</span></p>
+                                </div>
+                                <div class="doc_preview">
+                                    <p class="doc_preview__num">3</p>
+                                    <p class="doc_preview__name"><span class="dpn_title">Название_файла_подлиннее.pdf</span><span class="doc_preview__name_count">5 листов</span></p>
+                                </div>
+                                <a class="doc_form__btn" href="#"><img src="img/+.svg" alt="+"></a>
+                            </div>
+
+                            <div class="item">
+                                <p>Дата</p>
+                                <input type="date" placeholder="" class="form__item date">
+                            </div>
+
+                            <div class="item_box">
+                                <div class="item">
+                                    <p>Должность руководителя</p>
+                                    <input type="text" class="form__item">
+                                </div>
+                                <div class="item">
+                                    <p>ФИО руководителя</p>
+                                    <input type="text" class="form__item">
+                                </div>
+                            </div>
+                            <div class="item_box">
+                                <div class="item">
+                                    <p>Телефон</p>
+                                    <input type="number" class="form__item">
+                                </div>
+                                <div class="item">
+                                    <p>Email</p>
+                                    <input type="email" class="form__item">
+                                </div>
+                            </div>
+
+                            <div class="document_check">
+                                <label class="inline-label form__checkbox check">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                    <span class="form__checkbox_indicator"></span>
+                                    <p>Я принимаю условия <a href="#" class="link">Пользовательского соглашения</a></p>
+                                </label>
+                                <label class="inline-label form__checkbox check">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                    <span class="form__checkbox_indicator"></span>
+                                    <p>Я даю согласие ООО "СДО" на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 152 ФЗ «О персональных данных» на условиях и для целей, определенных Политикой конфиденциальности</p>
+                                </label>
+                            </div>
+                            <button class="btn">Сформировать заявление</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

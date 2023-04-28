@@ -5,6 +5,12 @@
   h1 {
     margin-bottom: 24px;
   }
+  .link_back {
+    margin-right: 16px;
+      &:hover {
+        opacity: 0.7;
+      }
+  }
 }
 
 .course_timer {
