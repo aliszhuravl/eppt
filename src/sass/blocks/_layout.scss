@@ -242,7 +242,15 @@
     max-width: 100%;
     right: 50%;
   }
-
+  .tex_box {
+    flex-direction: column;
+      &__item {
+        margin-bottom: 32px;
+        .phone_desc {
+          margin-bottom: 20px;
+        }
+      }
+  }
 }
 
 
@@ -417,8 +425,14 @@
     padding: 20px;
   }
   .item_sidebar__content h1 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  .item_sidebar__content h3 {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .bc {
@@ -862,5 +876,52 @@
         margin-right: 0;
         margin-bottom: 6px;
       }
+  }
+
+  .page-main .tile__item {
+    padding: 20px;
+    border: none;
+      &:nth-child(2) {
+        border: 1px solid rgba(0, 102, 174, .38);
+      }
+  }
+
+  .tile_links .tile__item {
+    text-align: center;
+  }
+
+  .footer__inner {
+    &_mob {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .upper {
+        text-transform: uppercase;
+        color: $color-blue;
+        font-family: $font-family-bold;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 200px;
+      }
+      .btn {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .tex_box__item a {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .tex_box__item .phone_desc, .tex_box__item .phone_timing, .tex_box__item .light {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .tex_box__item .phone_timing {
+    margin-bottom: 8px;
   }
 }

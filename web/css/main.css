@@ -530,6 +530,7 @@ h3 {
 .header__inner_box_logo {
 	display: flex;
 	max-width: 600px;
+	text-decoration: none;
 	align-items: flex-start;
 }
 
@@ -542,6 +543,7 @@ h3 {
 	font-size: 22px;
 	line-height: 24px;
 	margin-bottom: 6px;
+	text-decoration: none;
 	text-transform: uppercase;
 	color: #0066ae;
 }
@@ -550,6 +552,7 @@ h3 {
 	font-family: 'DinProRegular', 'Arial', serif;
 	font-size: 13px;
 	line-height: 18px;
+	text-decoration: none;
 	text-transform: uppercase;
 	opacity: .8;
 	color: #0066ae;
@@ -584,6 +587,9 @@ h3 {
 .subheader_box__search .form__item {
 	width: auto;
 	min-width: 280px;
+	background-image: url('../img/loop.svg');
+	background-repeat: no-repeat;
+	background-position: top 50% right 20px;
 }
 
 .nav__list {
@@ -1730,6 +1736,42 @@ h3 {
 	background-color: #44ab5b;
 }
 
+.tex_box {
+	display: flex;
+	width: 100%;
+}
+
+.tex_box__item {
+	margin-right: 80px;
+}
+
+.tex_box__item a {
+	font-family: 'DinProRegular', 'Arial', serif;
+	font-size: 36px;
+	line-height: 26px;
+	margin-bottom: 20px;
+	text-decoration: underline;
+	color: #0066ae;
+}
+
+.tex_box__item .phone_desc,
+.tex_box__item .phone_timing {
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 16px;
+	color: #566069;
+}
+
+.tex_box__item .phone_desc {
+	margin-bottom: 32px;
+}
+
+.tex_box__item .light {
+	font-size: 22px;
+	line-height: 24px;
+	color: rgba(86, 96, 105, .5);
+}
+
 .accordion {
 	width: 100%;
 	border-bottom: 1px solid #aaa;
@@ -2552,22 +2594,6 @@ h3 {
 	color: #0066ae;
 }
 
-.test_content__question_variants .right_answer {
-	border-color: #44ab5b;
-}
-
-.test_content__question_variants .right_answer p {
-	color: #44ab5b;
-}
-
-.test_content__question_variants .wrong_answer {
-	border-color: #ab554f;
-}
-
-.test_content__question_variants .wrong_answer p {
-	color: #ab554f;
-}
-
 .test_content__question_submit {
 	display: flex;
 	width: 100%;
@@ -2840,6 +2866,90 @@ h3 {
 
 .all-final a {
 	margin-top: 20px;
+}
+
+.testing_box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.testing_box .form__checkbox {
+	font-size: 13px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 12px 20px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.testing_box .form__checkbox_hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	margin: 0;
+	opacity: 0;
+}
+
+.testing_box .form__checkbox_indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: .25s cubic-bezier(.645, .045, .355, 1);
+	pointer-events: none;
+	border-radius: 40px;
+	background-color: transparent;
+}
+
+.testing_box .form__checkbox_indicator:after {
+	display: none;
+	background-color: transparent;
+}
+
+.testing_box .form__checkbox_text {
+	font-family: 'DinProRegular', 'Arial', serif;
+	font-size: 16px;
+	line-height: 20px;
+	position: relative;
+	z-index: 1;
+	display: block;
+	transition: all .2s;
+	pointer-events: none;
+	color: #566069;
+}
+
+.testing_box .form__checkbox > input:checked ~ .form__checkbox_indicator {
+	border-color: #0066ae;
+	background: transparent;
+}
+
+.testing_box .form__checkbox > input:checked ~ .form__checkbox_text {
+	color: #0066ae;
+}
+
+.testing_box .form__checkbox > input:not(checked) ~ .form__checkbox_indicator {
+	border: 1px solid rgba(0, 102, 174, .13);
+	border-radius: 40px;
+	background: #fff;
+}
+
+.testing_box .form__checkbox > input:focus ~ .form__checkbox_indicator {
+	border-color: #0066ae;
+}
+
+.right_answer span {
+	color: #44ab5b !important;
+	border-color: #44ab5b !important;
+}
+
+.wrong_answer span {
+	color: #ab554f !important;
+	border-color: #ab554f !important;
 }
 
 .test_content__info {
@@ -2948,22 +3058,6 @@ h3 {
 	color: #0066ae;
 }
 
-.test_content__question_variants .right_answer {
-	border-color: #44ab5b;
-}
-
-.test_content__question_variants .right_answer p {
-	color: #44ab5b;
-}
-
-.test_content__question_variants .wrong_answer {
-	border-color: #ab554f;
-}
-
-.test_content__question_variants .wrong_answer p {
-	color: #ab554f;
-}
-
 .test_content__question_submit {
 	display: flex;
 	width: 100%;
@@ -3236,6 +3330,90 @@ h3 {
 
 .all-final a {
 	margin-top: 20px;
+}
+
+.testing_box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.testing_box .form__checkbox {
+	font-size: 13px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 12px 20px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.testing_box .form__checkbox_hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	margin: 0;
+	opacity: 0;
+}
+
+.testing_box .form__checkbox_indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: .25s cubic-bezier(.645, .045, .355, 1);
+	pointer-events: none;
+	border-radius: 40px;
+	background-color: transparent;
+}
+
+.testing_box .form__checkbox_indicator:after {
+	display: none;
+	background-color: transparent;
+}
+
+.testing_box .form__checkbox_text {
+	font-family: 'DinProRegular', 'Arial', serif;
+	font-size: 16px;
+	line-height: 20px;
+	position: relative;
+	z-index: 1;
+	display: block;
+	transition: all .2s;
+	pointer-events: none;
+	color: #566069;
+}
+
+.testing_box .form__checkbox > input:checked ~ .form__checkbox_indicator {
+	border-color: #0066ae;
+	background: transparent;
+}
+
+.testing_box .form__checkbox > input:checked ~ .form__checkbox_text {
+	color: #0066ae;
+}
+
+.testing_box .form__checkbox > input:not(checked) ~ .form__checkbox_indicator {
+	border: 1px solid rgba(0, 102, 174, .13);
+	border-radius: 40px;
+	background: #fff;
+}
+
+.testing_box .form__checkbox > input:focus ~ .form__checkbox_indicator {
+	border-color: #0066ae;
+}
+
+.right_answer span {
+	color: #44ab5b !important;
+	border-color: #44ab5b !important;
+}
+
+.wrong_answer span {
+	color: #ab554f !important;
+	border-color: #ab554f !important;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
@@ -4149,6 +4327,18 @@ h1 {
 	max-width: 100%;
 }
 
+.tex_box {
+	flex-direction: column;
+}
+
+.tex_box__item {
+	margin-bottom: 32px;
+}
+
+.tex_box__item .phone_desc {
+	margin-bottom: 20px;
+}
+
 }
 
 @media (max-width: 960px) {
@@ -4350,8 +4540,14 @@ h1 {
 }
 
 .item_sidebar__content h1 {
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 12px;
+}
+
+.item_sidebar__content h3 {
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .bc {
@@ -4833,6 +5029,56 @@ h3 {
 .demo-test .orange img {
 	margin-right: 0;
 	margin-bottom: 6px;
+}
+
+.page-main .tile__item {
+	padding: 20px;
+	border: none;
+}
+
+.page-main .tile__item:nth-child(2) {
+	border: 1px solid rgba(0, 102, 174, .38);
+}
+
+.tile_links .tile__item {
+	text-align: center;
+}
+
+.footer__inner_mob {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.footer__inner_mob .upper {
+	font-family: 'DinProBold', 'Arial', serif;
+	font-size: 12px;
+	line-height: 15px;
+	max-width: 200px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #0066ae;
+}
+
+.footer__inner_mob .btn {
+	margin-bottom: 16px;
+}
+
+.tex_box__item a {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.tex_box__item .phone_desc,
+.tex_box__item .phone_timing,
+.tex_box__item .light {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.tex_box__item .phone_timing {
+	margin-bottom: 8px;
 }
 
 }

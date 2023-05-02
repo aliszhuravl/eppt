@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__inner">
             <div class="header__inner_box">
-                <div class="header__inner_box_logo">
+                <a class="header__inner_box_logo" href="index.html">
                     <div class="header__inner_box_logo-img">
                         <img src="img/logo.png" alt="">
                     </div>
@@ -20,7 +20,7 @@
                         <p class="upper">Единый портал подготовки к тестированию</p>
                         <p class="sub">В области промышленной безопасности, безопасности гидротехнических сооружений, безопасности в сфере электроэнергии</p>
                     </div>
-                </div>
+                </a>
                 <div class="header__inner_box_profile">
                     <div class="hamburger">
                         <button class="hamburger__item" id="burger">
@@ -96,22 +96,32 @@
                             <p>Каким образом должна обеспечиваться безопасность здания или сооружения в процессе эксплуатации?</p>
                             <p class="info mobile"><span><img src="img/info.svg" alt=""></span>Подразумевается несколько вариантов ответа</p>
                         </div>
-                        <div class="test_content__question_variants">
-                            <div class="test_content__question_variants__item">
-                                <p>Только посредством мониторинга состояния основания.</p>
-                            </div>
-                            <div class="test_content__question_variants__item">
-                                <p>Только посредством проведения экспертизы промышленной безопасности.</p>
-                            </div>
-                            <div class="test_content__question_variants__item right_answer">
-                                <p>Только посредством технического обслуживания систем инженерно-технического обеспечения.</p>
-                            </div>
-                            <div class="test_content__question_variants__item wrong_answer">
-                                <p>Посредством проведения всех перечисленных мероприятий, включая проведение текущих ремонтов здания или сооружения.</p>
-                            </div>
-                            <div class="test_content__question_variants__item">
-                                <p>Только посредством периодических осмотров строительных конструкций.</p>
-                            </div>
+                        <div class="test_content__question_variants testing_box">
+                            <label class="inline-label form__checkbox right_answer check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                <span class="form__checkbox_indicator"></span>
+                                <span class="form__checkbox_text">Только посредством мониторинга состояния основания.</span>
+                            </label>
+                            <label class="inline-label form__checkbox wrong_answer check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
+                                <span class="form__checkbox_indicator"></span>
+                                <span class="form__checkbox_text">Только посредством проведения экспертизы промышленной безопасности.</span>
+                            </label>
+                            <label class="inline-label form__checkbox check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-3">
+                                <span class="form__checkbox_indicator"></span>
+                                <span class="form__checkbox_text">Только посредством технического обслуживания систем инженерно-технического обеспечения.</span>
+                            </label>
+                            <label class="inline-label form__checkbox check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-4">
+                                <span class="form__checkbox_indicator"></span>
+                                <span class="form__checkbox_text">Посредством проведения всех перечисленных мероприятий, включая проведение текущих ремонтов здания или сооружения.</span>
+                            </label>
+                            <label class="inline-label form__checkbox check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-5">
+                                <span class="form__checkbox_indicator"></span>
+                                <span class="form__checkbox_text">Только посредством периодических осмотров строительных конструкций.</span>
+                            </label>
                         </div>
                         <div class="test_content__question_submit answer_check">
                             <p class="law">«Градостроительный кодекс Российской Федерации» от 29.12.2004 № 190-ФЗ</p>
@@ -125,6 +135,12 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
+            <div class="footer__inner_mob mobile">
+                <p class="upper">Единый портал подготовки к тестированию</p>
+                <a href="register.html" class="btn btn_transparent">Регистрация</a>
+                <a href="enter.html" class="btn">Войти в систему</a>
+            </div>
+
             <div class="footer__inner_top">
                 <div class="footer__inner_top__item">
                     <img src="img/f1.png" alt="">

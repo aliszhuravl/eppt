@@ -511,3 +511,33 @@
 .passed {
   background-color: $color-green;
 }
+
+.tex_box {
+  width: 100%;
+  display: flex;
+    &__item {
+      margin-right: 80px;
+        a {
+          font-size: 36px;
+          line-height: 26px;
+          text-decoration: underline;
+          color: #0066AE;
+          font-family: $font-family;
+          margin-bottom: 20px;
+        }
+        .phone_desc, .phone_timing {
+          font-size: 22px;
+          line-height: 24px;
+          color: #566069;
+          margin-bottom: 16px;
+        }
+        .phone_desc {
+          margin-bottom: 32px;
+        }
+        .light {
+          color: rgba(86, 96, 105, 0.5);
+          font-size: 22px;
+          line-height: 24px;
+        }
+    }
+}

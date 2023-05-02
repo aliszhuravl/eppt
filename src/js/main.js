@@ -6,3 +6,4 @@
 //= parts/_fancybox.js
 //= parts/_menu.js
 //= parts/_burger.js
+//= parts/_test.js
