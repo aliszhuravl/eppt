@@ -1,13 +1,21 @@
 $(document).ready(function() {
-    var $indicator = $('.form__checkbox'),
-        $input = $indicator.find('input'),
-        $inputtext = $indicator.find('.form__checkbox_indicator');
+    let indicator = $('.form__checkbox'),
+        input = indicator.find('input'),
+        inputtext = indicator.find('.form__checkbox_indicator');
 
-    $('.submit_test').on( "click", function(){
-            if ($input.is(':checked')) {
-                console.log('ты лох');
-                $('.form__checkbox').addClass('right_answer');
+    $('.submit_test').on( "click", function(evt){
+        evt.preventDefault();
+
+        $('.form__checkbox').each(function(){
+            if ($(this).find('input:nth-child(1)').is(':checked')) {
+                $(this).addClass('right_answer');
+
+            } else if ($(this).find('input:nth-child(2)').is(':checked')) {
+                $(this).addClass('wrong_answer');
             }
+        });
+        $('.submit_test').fadeOut(20);
+        $('.next_test').addClass('showed');
     });
 });
 

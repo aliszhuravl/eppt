@@ -7,3 +7,5 @@
 //= parts/_menu.js
 //= parts/_burger.js
 //= parts/_test.js
+//= parts/_more.js
+//= parts/_countdown.js

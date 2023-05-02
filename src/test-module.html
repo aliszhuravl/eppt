@@ -30,7 +30,7 @@
                     <div class="test_content__info">
                         <div class="course_timer">
                             <p class="course_timer-available">Курс доступен до 23:59 28.06.2023</p>
-                            <p class="course_timer-timer"><img src="img/time.svg" alt=""><span>23:59:06</span></p>
+                            <p class="course_timer-timer"><img src="img/time.svg" alt=""><span class="countdown">23:59:59</span></p>
                         </div>
                         <div class="exit">
                             <a href="course-1.html" class="btn">Выйти из тестирования</a>
@@ -52,12 +52,12 @@
                         </div>
                         <div class="test_content__question_variants testing_box">
                             <label class="inline-label form__checkbox check">
-                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                 <span class="form__checkbox_indicator"></span>
                                 <span class="form__checkbox_text">Только посредством мониторинга состояния основания.</span>
                             </label>
                             <label class="inline-label form__checkbox check">
-                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2" checked>
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
                                 <span class="form__checkbox_indicator"></span>
                                 <span class="form__checkbox_text">Только посредством проведения экспертизы промышленной безопасности.</span>
                             </label>
@@ -79,7 +79,10 @@
                         </div>
                         <div class="test_content__question_submit">
                             <p>Выберите правильный(ые) ответ(ы) на вопрос и нажмите кнопку «Ответить». После этого ответ будет сохранен и система отобразит правильный ответ на вопрос.</p>
-                            <a class="btn" href='test-module-1.html'>Ответить</a>
+                            <div class="btns_test">
+                                <button class="btn next_test" onclick="location.href = 'test-module-1.html';">Следующий вопрос</button>
+                                <button class="btn submit_test">Ответить</button>
+                            </div>
                         </div>
                     </div>
                 </div>

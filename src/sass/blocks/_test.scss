@@ -99,7 +99,7 @@
             color: rgba(41, 41, 41, 0.7);
           }
           .btn {
-            min-width: 150px;
+            //min-width: 150px;
           }
       }
     .answer_check {
@@ -434,4 +434,41 @@
     border-color: $color-red !important;
     color: $color-red !important;
   }
+}
+
+.not-visible {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  height: 0;
+  padding: 0;
+}
+
+.opened {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+  height: auto;
+  padding: 20px 0;
+}
+
+.next_test {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  width: 0;
+}
+
+.showed {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.btns_test {
+  min-width: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }

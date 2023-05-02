@@ -222,14 +222,46 @@ $(document).ready(function() {
     });
 })(jQuery);
 $(document).ready(function() {
-    var $indicator = $('.form__checkbox'),
-        $input = $indicator.find('input'),
-        $inputtext = $indicator.find('.form__checkbox_indicator');
+    let indicator = $('.form__checkbox'),
+        input = indicator.find('input'),
+        inputtext = indicator.find('.form__checkbox_indicator');
 
-    $('.submit_test').on( "click", function(){
-            if ($input.is(':checked')) {
-                console.log('ты лох');
-                $('.form__checkbox').addClass('right_answer');
+    $('.submit_test').on( "click", function(evt){
+        evt.preventDefault();
+
+        $('.form__checkbox').each(function(){
+            if ($(this).find('input:nth-child(1)').is(':checked')) {
+                $(this).addClass('right_answer');
+
+            } else if ($(this).find('input:nth-child(2)').is(':checked')) {
+                $(this).addClass('wrong_answer');
             }
+        });
+        $('.submit_test').fadeOut(20);
+        $('.next_test').addClass('showed');
     });
+});
+$(document).ready(function() {
+    $('.more_btn').on( "click", function(){
+        $(this).fadeOut(200);
+        $('.not-visible').removeClass('hidden').addClass('opened');
+    });
+});
+function countDown() {
+    var seconds = 86400;
+    var timer = setInterval(function() {
+        if (seconds > 0) {
+            seconds --;
+            var h = seconds/3600 ^ 0,
+                m = (seconds-h*3600)/60 ^ 0,
+                s = seconds-h*3600-m*60,
+                time = (h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s);
+            $(".countdown").text(time);
+        } else {
+            clearInterval(timer);
+        }
+    }, 1000);
+}
+$(function() {
+    countDown()
 });

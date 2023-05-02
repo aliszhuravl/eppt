@@ -731,7 +731,9 @@ h3 {
 	margin-right: 12px;
 }
 
-.footer__inner_top__item p {
+.footer__inner_top__item .link,
+.footer__inner_top__item .nav__link a,
+.nav__link .footer__inner_top__item a {
 	font-size: 17px;
 	line-height: 22px;
 	color: rgba(86, 96, 105, .5);
@@ -958,6 +960,11 @@ h3 {
 
 .form_body .form.agreement_big .document_check a {
 	text-decoration: underline;
+}
+
+.file_input {
+	position: absolute;
+	opacity: 0;
 }
 
 /* fuck ie */
@@ -2381,7 +2388,7 @@ h3 {
 }
 
 .article .blue {
-	color: #0066ae;
+	background: rgba(0, 102, 174, .13);
 }
 
 .article ol {
@@ -2608,10 +2615,6 @@ h3 {
 	color: rgba(41, 41, 41, .7);
 }
 
-.test_content__question_submit .btn {
-	min-width: 150px;
-}
-
 .test_content__question .answer_check {
 	flex-direction: column;
 }
@@ -2950,6 +2953,43 @@ h3 {
 .wrong_answer span {
 	color: #ab554f !important;
 	border-color: #ab554f !important;
+}
+
+.not-visible {
+	visibility: hidden;
+	height: 0;
+	padding: 0;
+	transition: all .2s;
+	opacity: 0;
+}
+
+.opened {
+	visibility: visible;
+	height: auto;
+	padding: 20px 0;
+	transition: all .2s;
+	opacity: 1;
+}
+
+.next_test {
+	visibility: hidden;
+	width: 0;
+	transition: all .2s;
+	opacity: 0;
+}
+
+.showed {
+	visibility: visible;
+	width: auto;
+	transition: all .2s;
+	opacity: 1;
+}
+
+.btns_test {
+	display: flex;
+	min-width: 200px;
+	align-items: flex-end;
+	justify-content: flex-end;
 }
 
 .test_content__info {
@@ -3072,10 +3112,6 @@ h3 {
 	color: rgba(41, 41, 41, .7);
 }
 
-.test_content__question_submit .btn {
-	min-width: 150px;
-}
-
 .test_content__question .answer_check {
 	flex-direction: column;
 }
@@ -3414,6 +3450,43 @@ h3 {
 .wrong_answer span {
 	color: #ab554f !important;
 	border-color: #ab554f !important;
+}
+
+.not-visible {
+	visibility: hidden;
+	height: 0;
+	padding: 0;
+	transition: all .2s;
+	opacity: 0;
+}
+
+.opened {
+	visibility: visible;
+	height: auto;
+	padding: 20px 0;
+	transition: all .2s;
+	opacity: 1;
+}
+
+.next_test {
+	visibility: hidden;
+	width: 0;
+	transition: all .2s;
+	opacity: 0;
+}
+
+.showed {
+	visibility: visible;
+	width: auto;
+	transition: all .2s;
+	opacity: 1;
+}
+
+.btns_test {
+	display: flex;
+	min-width: 200px;
+	align-items: flex-end;
+	justify-content: flex-end;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
