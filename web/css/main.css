@@ -1234,7 +1234,7 @@ h3 {
 }
 
 .tile__item ul li a {
-	font-family: 'DinProMedium', 'Arial', serif;
+	font-family: 'DinProRegular', 'Arial', serif;
 	font-size: 18px;
 	display: flex;
 	width: 100%;
@@ -2955,33 +2955,69 @@ h3 {
 	border-color: #ab554f !important;
 }
 
+.law_hint {
+	position: absolute;
+	display: none;
+	visibility: hidden;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.law_hint .law {
+	font-family: 'DinProMedium', 'Arial', serif;
+	font-size: 18px;
+	line-height: 26px;
+	display: block;
+	max-width: 85%;
+	margin-bottom: 12px;
+	transition: all .3s;
+	color: #292929;
+}
+
+.law_hint p {
+	max-width: 85%;
+}
+
 .not-visible {
 	visibility: hidden;
 	height: 0;
 	padding: 0;
-	transition: all .2s;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.hidden .btn {
+	transition: all .3s;
 	opacity: 0;
 }
 
 .opened {
+	display: block;
 	visibility: visible;
 	height: auto;
 	padding: 20px 0;
-	transition: all .2s;
+	transition: opacity .3s;
 	opacity: 1;
 }
 
 .next_test {
+	display: none;
 	visibility: hidden;
-	width: 0;
-	transition: all .2s;
+	transition: opacity .3s;
 	opacity: 0;
 }
 
 .showed {
+	position: static;
+	display: block;
 	visibility: visible;
-	width: auto;
-	transition: all .2s;
+	transition: opacity .3s;
+	transition-delay: .1s;
+	opacity: 1;
+}
+
+.showed .btn {
+	transition: all .3s;
 	opacity: 1;
 }
 
@@ -2990,6 +3026,11 @@ h3 {
 	min-width: 200px;
 	align-items: flex-end;
 	justify-content: flex-end;
+}
+
+.btn.showed {
+	display: flex;
+	height: 42px;
 }
 
 .test_content__info {
@@ -3452,33 +3493,69 @@ h3 {
 	border-color: #ab554f !important;
 }
 
+.law_hint {
+	position: absolute;
+	display: none;
+	visibility: hidden;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.law_hint .law {
+	font-family: 'DinProMedium', 'Arial', serif;
+	font-size: 18px;
+	line-height: 26px;
+	display: block;
+	max-width: 85%;
+	margin-bottom: 12px;
+	transition: all .3s;
+	color: #292929;
+}
+
+.law_hint p {
+	max-width: 85%;
+}
+
 .not-visible {
 	visibility: hidden;
 	height: 0;
 	padding: 0;
-	transition: all .2s;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.hidden .btn {
+	transition: all .3s;
 	opacity: 0;
 }
 
 .opened {
+	display: block;
 	visibility: visible;
 	height: auto;
 	padding: 20px 0;
-	transition: all .2s;
+	transition: opacity .3s;
 	opacity: 1;
 }
 
 .next_test {
+	display: none;
 	visibility: hidden;
-	width: 0;
-	transition: all .2s;
+	transition: opacity .3s;
 	opacity: 0;
 }
 
 .showed {
+	position: static;
+	display: block;
 	visibility: visible;
-	width: auto;
-	transition: all .2s;
+	transition: opacity .3s;
+	transition-delay: .1s;
+	opacity: 1;
+}
+
+.showed .btn {
+	transition: all .3s;
 	opacity: 1;
 }
 
@@ -3487,6 +3564,11 @@ h3 {
 	min-width: 200px;
 	align-items: flex-end;
 	justify-content: flex-end;
+}
+
+.btn.showed {
+	display: flex;
+	height: 42px;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */

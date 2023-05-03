@@ -47,9 +47,9 @@
                         <li class="nav__link"><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="subheader_box__search">
-                    <input type="search" placeholder="Поиск по сайту" class="form__item">
-                </div>
+    <!--            <div class="subheader_box__search">-->
+    <!--                <input type="search" placeholder="Поиск по сайту" class="form__item">-->
+    <!--            </div>-->
             </div>
         </div>
     </header>
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="item_sidebar__content profile_content test_content">
-                    <div class="bc">Главная / Личный кабинет / Мои курсы / A.1 / Тестирование по модулю</div>
+                    <div class="bc"><a href="index.html" class="link">Главная</a> / <a href="profile.html" class="link">Личный кабинет</a> / <a href="courses_all.html" class="link">Мои курсы</a> / <a href="course-1.html" class="link">A1 Основы промышленной безопасности</a> / Тестирование. Модуль № 2</div>
                     <div class="course_title">
                         <h1>A1 Основы промышленной безопасности</h1>
                     </div>
@@ -124,8 +124,15 @@
                             </label>
                         </div>
                         <div class="test_content__question_submit">
-                            <p>Выберите правильный (ые) ответ (ы) на вопрос и нажмите кнопку «Ответить». После этого ответ будет сохранен и система отобразит правильный ответ на вопрос.</p>
-                            <a class="btn" href="#modal4" rel="modal:open">Завершить тест</a>
+                            <p class="q_hint">Выберите правильный (ые) ответ (ы) на вопрос и нажмите кнопку «Ответить». После этого ответ будет сохранен и система отобразит правильный ответ на вопрос.</p>
+                            <div class="law_hint">
+                                <p class="law">«Градостроительный кодекс Российской Федерации» от 29.12.2004 № 190-ФЗ</p>
+                                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
+                            </div>
+                            <div class="btns_test">
+                                <button class="btn submit_test">Ответить</button>
+                                <a class="btn next_test" href="#modal4" rel="modal:open">Завершить тест</a>
+                            </div>
                         </div>
                     </div>
                 </div>

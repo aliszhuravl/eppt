@@ -436,34 +436,70 @@
   }
 }
 
+
+.law_hint {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  display: none;
+  position: absolute;
+    .law {
+      font-family: $font-family_medium;
+      font-size: 18px;
+      line-height: 26px;
+      color: $color-black;
+      display: block;
+      margin-bottom: 12px;
+      max-width: 85%;
+      transition: all 0.3s;
+    }
+    p {
+      max-width: 85%;
+    }
+}
+
 .not-visible {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s;
-  height: 0;
+  transition: all 0.3s;
   padding: 0;
+  height: 0;
+}
+
+.hidden {
+  .btn {
+    opacity: 0;
+    transition: all 0.3s;
+  }
 }
 
 .opened {
   visibility: visible;
   opacity: 1;
-  transition: all 0.2s;
-  height: auto;
+  transition: opacity 0.3s;
+  display: block;
   padding: 20px 0;
+  height: auto;
 }
 
 .next_test {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.2s;
-  width: 0;
+  transition: opacity 0.3s;
+  display: none;
 }
 
 .showed {
   visibility: visible;
   opacity: 1;
-  transition: all 0.2s;
-  width: auto;
+  transition: opacity 0.3s;
+  transition-delay: 0.1s;
+  display: block;
+  position: static;
+  .btn {
+    opacity: 1;
+    transition: all 0.3s;
+  }
 }
 
 .btns_test {
@@ -471,4 +507,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.btn.showed {
+  height: 42px;
+  display: flex;
 }

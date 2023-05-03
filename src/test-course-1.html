@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="item_sidebar__content profile_content test_content">
-                    <div class="bc">Главная / Личный кабинет / Мои курсы / A.1 / Тестирование по курсу</div>
+                    <div class="bc"><a href="index.html" class="link">Главная</a> / <a href="profile.html" class="link">Личный кабинет</a> / <a href="courses_all.html" class="link">Мои курсы</a> / <a href="course-3.html" class="link">A1 Основы промышленной безопасности</a> / Тестирование по курсу</div>
                     <div class="course_title">
                         <h1>A1 Основы промышленной безопасности</h1>
                     </div>
@@ -51,12 +51,12 @@
                             <p class="info mobile"><span><img src="img/info.svg" alt=""></span>Подразумевается несколько вариантов ответа</p>
                         </div>
                         <div class="test_content__question_variants testing_box">
-                            <label class="inline-label form__checkbox right_answer check">
+                            <label class="inline-label form__checkbox check">
                                 <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
                                 <span class="form__checkbox_indicator"></span>
                                 <span class="form__checkbox_text">Только посредством мониторинга состояния основания.</span>
                             </label>
-                            <label class="inline-label form__checkbox wrong_answer check">
+                            <label class="inline-label form__checkbox check">
                                 <input class="form__checkbox_hidden" type="checkbox" name="checkbox-2">
                                 <span class="form__checkbox_indicator"></span>
                                 <span class="form__checkbox_text">Только посредством проведения экспертизы промышленной безопасности.</span>
@@ -77,10 +77,16 @@
                                 <span class="form__checkbox_text">Только посредством периодических осмотров строительных конструкций.</span>
                             </label>
                         </div>
-                        <div class="test_content__question_submit answer_check">
-                            <p class="law">«Градостроительный кодекс Российской Федерации» от 29.12.2004 №190-ФЗ</p>
-                            <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
-                            <a class="btn" href="#modal2" rel="modal:open">Следующий вопрос</a>
+                        <div class="test_content__question_submit">
+                            <p class="q_hint">Выберите правильный(ые) ответ(ы) на вопрос и нажмите кнопку «Ответить». После этого ответ будет сохранен и система отобразит правильный ответ на вопрос.</p>
+                            <div class="law_hint">
+                                <p class="law">«Градостроительный кодекс Российской Федерации» от 29.12.2004 №190-ФЗ</p>
+                                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
+                            </div>
+                            <div class="btns_test">
+                                <button class="btn submit_test">Ответить</button>
+                                <a class="btn next_test" href="#modal2" rel="modal:open">Завершить тест</a>
+                            </div>
                         </div>
                     </div>
                 </div>

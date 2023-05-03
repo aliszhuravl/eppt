@@ -14,8 +14,11 @@ $(document).ready(function() {
                 $(this).addClass('wrong_answer');
             }
         });
-        $('.submit_test').fadeOut(20);
+        $('.submit_test').addClass('hidden');
         $('.next_test').addClass('showed');
+
+        $('.q_hint').addClass('hidden');
+        $('.law_hint').addClass('showed');
     });
 });
 
