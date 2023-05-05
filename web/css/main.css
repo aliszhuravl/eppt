@@ -2698,6 +2698,7 @@ h3 {
 	transition: all .2s;
 	text-align: center;
 	color: #0066ae;
+	border: none;
 	border-radius: 4px;
 	background: #fff;
 	box-shadow: 0 0 7px rgba(0, 0, 0, .25);
@@ -2723,6 +2724,13 @@ h3 {
 }
 
 .demo-test .test_content__info .left_questions .disabled {
+	color: rgba(86, 96, 105, .5);
+	background: #eaecef;
+	box-shadow: none;
+}
+
+.demo-test .test_content__info .left_questions .disabled:focus,
+.demo-test .test_content__info .left_questions .disabled:hover {
 	color: rgba(86, 96, 105, .5);
 	background: #eaecef;
 	box-shadow: none;
@@ -2761,7 +2769,7 @@ h3 {
 	color: #258ddc;
 }
 
-.demo-test .test_content__question_variants__item {
+.demo-test .test_content__question_variants__item.form__checkbox {
 	display: flex;
 	margin-bottom: 6px;
 	padding: 12px;
@@ -2771,12 +2779,26 @@ h3 {
 	align-items: center;
 }
 
-.demo-test .test_content__question_variants__item .check {
+.demo-test .test_content__question_variants__item.form__checkbox .check {
 	width: 32px;
 	height: 32px;
 	margin-right: 12px;
+	transition: all .2s;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.demo-test .test_content__question_variants__item.form__checkbox .form__checkbox_indicator {
+	border: none;
+	background-color: transparent;
+}
+
+.demo-test .form__checkbox > input:checked ~ .check {
+	transition: all .2s;
+	border: 2px solid #258ddc;
+	background-image: url('../img/check.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .demo-test .chosen p {
@@ -3236,6 +3258,7 @@ h3 {
 	transition: all .2s;
 	text-align: center;
 	color: #0066ae;
+	border: none;
 	border-radius: 4px;
 	background: #fff;
 	box-shadow: 0 0 7px rgba(0, 0, 0, .25);
@@ -3261,6 +3284,13 @@ h3 {
 }
 
 .demo-test .test_content__info .left_questions .disabled {
+	color: rgba(86, 96, 105, .5);
+	background: #eaecef;
+	box-shadow: none;
+}
+
+.demo-test .test_content__info .left_questions .disabled:focus,
+.demo-test .test_content__info .left_questions .disabled:hover {
 	color: rgba(86, 96, 105, .5);
 	background: #eaecef;
 	box-shadow: none;
@@ -3299,7 +3329,7 @@ h3 {
 	color: #258ddc;
 }
 
-.demo-test .test_content__question_variants__item {
+.demo-test .test_content__question_variants__item.form__checkbox {
 	display: flex;
 	margin-bottom: 6px;
 	padding: 12px;
@@ -3309,12 +3339,26 @@ h3 {
 	align-items: center;
 }
 
-.demo-test .test_content__question_variants__item .check {
+.demo-test .test_content__question_variants__item.form__checkbox .check {
 	width: 32px;
 	height: 32px;
 	margin-right: 12px;
+	transition: all .2s;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.demo-test .test_content__question_variants__item.form__checkbox .form__checkbox_indicator {
+	border: none;
+	background-color: transparent;
+}
+
+.demo-test .form__checkbox > input:checked ~ .check {
+	transition: all .2s;
+	border: 2px solid #258ddc;
+	background-image: url('../img/check.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .demo-test .chosen p {
