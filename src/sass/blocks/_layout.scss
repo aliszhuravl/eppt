@@ -924,4 +924,23 @@
   .tex_box__item .phone_timing {
     margin-bottom: 8px;
   }
+
+  .course_box_right .progress {
+    flex-direction: column;
+  }
+
+  .course_box_right .progress__item {
+    width: 100%;
+      a {
+        display: block;
+      }
+  }
+  .buttons_block {
+    flex-direction: column;
+    width: 100%;
+      .btn {
+        width: 100%;
+        margin-right: 0;
+      }
+  }
 }

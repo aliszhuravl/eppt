@@ -2017,9 +2017,9 @@ h3 {
 }
 
 .course_box_right .course_name {
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom: 16px;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 24px;
 }
 
 .course_box_right .timer {
@@ -2029,26 +2029,55 @@ h3 {
 	color: rgba(41, 41, 41, .7);
 }
 
+.course_box_right .progress {
+	display: flex;
+}
+
 .course_box_right .progress__item {
+	width: 33.333%;
+	margin-right: 20px;
 	margin-bottom: 12px;
+	padding: 10px;
+	border: 1px solid rgba(68, 171, 91, .5);
+	border-radius: 16px;
 }
 
 .course_box_right .progress__item:last-child {
-	margin-bottom: 0;
+	margin-right: 0;
 }
 
-.course_box_right .progress__item p:first-child {
+.course_box_right .progress__item .pi_name {
 	font-size: 16px;
-	line-height: 18px;
-	margin-bottom: 2px;
-	letter-spacing: -.15px;
-	color: rgba(41, 41, 41, .8);
+	line-height: 20px;
+	margin-bottom: 12px;
+	color: rgba(41, 41, 41, .7);
 }
 
-.course_box_right .progress__item p:last-child {
-	font-size: 13px;
-	line-height: 18px;
-	color: rgba(41, 41, 41, .5);
+.course_box_right .progress__item .progress {
+	width: 5%;
+	height: 7px;
+	margin-bottom: 8px;
+	border-radius: 10px;
+	background: rgba(171, 85, 79, .6);
+}
+
+.course_box_right .progress__item .pi_status {
+	font-size: 16px;
+}
+
+.course_box_right .progress__item .completed {
+	width: 100%;
+	background: rgba(68, 171, 91, .6);
+}
+
+.course_box_right .progress__item .middle {
+	width: 65%;
+	background: rgba(213, 200, 87, .6);
+}
+
+.course_box_right .progress .complete {
+	border: none;
+	background: rgba(86, 96, 105, .04);
 }
 
 .sidebar {
@@ -2107,11 +2136,7 @@ h3 {
 }
 
 .page-courses .courses_wrap .course_box {
-	width: calc(50% - 16px);
-	margin-right: 32px;
-}
-
-.page-courses .courses_wrap .course_box:nth-child(2n) {
+	width: 100%;
 	margin-right: 0;
 }
 
@@ -3059,6 +3084,18 @@ h3 {
 	height: 42px;
 }
 
+.buttons_block {
+	display: flex;
+}
+
+.buttons_block .btn {
+	margin-right: 12px;
+}
+
+.buttons_block .btn:last-child {
+	margin-right: 0;
+}
+
 .test_content__info {
 	display: flex;
 	width: 100%;
@@ -3621,6 +3658,18 @@ h3 {
 .btn.showed {
 	display: flex;
 	height: 42px;
+}
+
+.buttons_block {
+	display: flex;
+}
+
+.buttons_block .btn {
+	margin-right: 12px;
+}
+
+.buttons_block .btn:last-child {
+	margin-right: 0;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
@@ -5286,6 +5335,28 @@ h3 {
 
 .tex_box__item .phone_timing {
 	margin-bottom: 8px;
+}
+
+.course_box_right .progress {
+	flex-direction: column;
+}
+
+.course_box_right .progress__item {
+	width: 100%;
+}
+
+.course_box_right .progress__item a {
+	display: block;
+}
+
+.buttons_block {
+	flex-direction: column;
+	width: 100%;
+}
+
+.buttons_block .btn {
+	width: 100%;
+	margin-right: 0;
 }
 
 }
