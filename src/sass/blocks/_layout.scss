@@ -47,6 +47,39 @@
 
 @media (max-width: 1199px) {
 
+  .profile_content .item_sidebar__content_container_left .profile_box {
+    width: 50%;
+    margin-right: 32px;
+  }
+
+  .profile_content .item_sidebar__content_container_left .info_box {
+    width: 50%;
+  }
+
+  .course_box {
+    flex-direction: column;
+      &_left {
+        flex-direction: row;
+          img {
+            margin-right: 20px;
+          }
+      }
+  }
+
+  .course_box_right {
+    width: 100%;
+    .progress {
+      flex-direction: column;
+      width: 100%;
+      &__item {
+        width: 100%;
+          .link {
+            display: block;
+          }
+      }
+    }
+  }
+
   .header__inner_box_profile-btns {
     display: none;
   }

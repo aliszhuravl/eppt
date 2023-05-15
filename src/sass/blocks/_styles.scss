@@ -541,3 +541,33 @@
         }
     }
 }
+
+.profile_content {
+  .item_sidebar__content_container {
+    width: 100%;
+    flex-direction: column;
+    h2 {
+      font-size: 30px;
+      line-height: 26px;
+      font-family: $font-family_medium;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+    &_left {
+      width: 100%;
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 40px;
+        .profile_box {
+          width: 45%;
+          margin-right: 60px;
+        }
+        .info_box {
+          width: 40%;
+        }
+    }
+    &_right {
+      width: 100%;
+    }
+  }
+}
